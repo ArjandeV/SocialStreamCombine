@@ -14,8 +14,8 @@ $feed->registerProvider(new SocialStreamCombine\Providers\Twitter([
 	'accessTokenSecret' => '',
 	'username' => '',
 ])) ;
-// $feed->registerFeed(new SocYolo\Providers\Facebook([]));
-// $feed->registerFeed(new SocYolo\Providers\GooglePlus([]));
-// $feed->registerFeed(new SocYolo\Providers\Youtube([]));
+// $feed->registerFeed(new SocialStreamCombine\Providers\Facebook([]));
+// $feed->registerFeed(new SocialStreamCombine\Providers\GooglePlus([]));
+// $feed->registerFeed(new SocialStreamCombine\Providers\Youtube([]));
 
 print_r($feed->getFeeds());
