@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false" preserveGlobalState="false"
+         backupStaticAttributes="false"
+         bootstrap="./phpunit.php"
+         colors="true"
+         processIsolation="false"
+         syntaxCheck="false">
+    <testsuites>
+        <testsuite name="socyoo/tests">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory suffix=".php">./tests/</directory>
+        </blacklist>
+    </filter>
+    <listeners>
+    </listeners>
+    <logging>
+    </logging>
+</phpunit>

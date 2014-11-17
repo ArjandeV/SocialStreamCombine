@@ -1,0 +1,20 @@
+{
+    "name": "adevreede/socyolo",
+    "description": "A yolo implementation of social feeds",
+    "keywords": ["socialfeeds", "googleplus", "youtube", "twitter", "facebook"],
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {
+            "SocYolo": "src/"
+        }
+    },
+    "require": {
+        "guzzle/guzzle": "~3.8.0"
+    },
+    "authors": [
+        {
+            "name": "Arjan de Vreede",
+            "email": "arjan@devreede.info"
+        }
+    ]
+}
