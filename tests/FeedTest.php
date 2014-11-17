@@ -1,15 +1,24 @@
 <?php
-
+date_default_timezone_set('Europe/Amsterdam');
 use SocialStreamCombine\Feed;
 
-class FeedTests extends \PHPUnit_Framework_TestCase
+class FeedTest extends \PHPUnit_Framework_TestCase
 {
 	/**
 	 *
 	 */
-	public function testFeed()
+	public function test_newFeed()
 	{
-		$feed = new Feed();
-		$this->assertTrue(is_object($feed),"Feed should be an object;-)");
+		$guzzleMock = $this->getMock('\Guzzle\Http\Client');
+		$feed       = new Feed($guzzleMock);
+		$this->assertTrue(is_object($feed), "Feed should be an object");
+	}
+	
+
+	public function test_getFeeds()
+	{
+		$guzzleMock = $this->getMock('\Guzzle\Http\Client');
+		$feed       = new Feed($guzzleMock);
+		$this->assertCount(10,$feed->getFeeds(10));
 	}
 }
