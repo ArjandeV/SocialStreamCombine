@@ -13,7 +13,7 @@ class FeedTest extends \PHPUnit_Framework_TestCase
 		$feed       = new Feed($guzzleMock);
 		$this->assertTrue(is_object($feed), "Feed should be an object");
 	}
-	
+
 
 	public function test_getFeeds()
 	{
