@@ -1,6 +1,8 @@
 <?php
 
-namespace SocYolo;
+namespace SocialStreamCombine;
+
+use \Guzzle\Http\Client;
 
 class Feed
 {
@@ -9,7 +11,7 @@ class Feed
 	protected $guzzle;
 	protected $feeds = [];
 
-	public function __construct(\Guzzle\Http\Client $guzzle, array $feeds = [], CacheInterface $cache = null, $cachekey = 'social-feeds')
+	public function __construct(Client $guzzle, array $feeds = [], CacheInterface $cache = null, $cachekey = 'social-feeds')
 	{
 		array_map([$this, 'registerProvider'], $feeds);
 		$this->setGuzzleClient($guzzle);
@@ -36,7 +38,7 @@ class Feed
 		return $response;
 	}
 
-	public function setGuzzleClient(\Guzzle\Http\Client $client)
+	public function setGuzzleClient(Client $client)
 	{
 		$this->guzzle = $client;
 	}
@@ -60,7 +62,7 @@ class Feed
 		return $this->cache->get($this->cachekey . $limit);
 	}
 
-	protected function cacheFeeds($response, $limit) 
+	protected function cacheFeeds($response, $limit)
 	{
 		$this->cache->store($this->cachekey . $limit, $response);
 	}

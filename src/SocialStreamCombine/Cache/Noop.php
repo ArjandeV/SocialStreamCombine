@@ -1,8 +1,8 @@
 <?php
 
-namespace SocYolo\Cache;
+namespace SocialStreamCombine\Cache;
 
-use SocYolo\CacheInterface;
+use SocialStreamCombine\CacheInterface;
 
 class Noop implements CacheInterface
 {

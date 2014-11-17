@@ -1,12 +1,12 @@
 <?php
 
-namespace SocYolo;
+namespace SocialStreamCombine;
 
 interface ProviderInterface {
 
 	/**
 	 * Get a social feed
-	 * 
+	 * @param int $limit
 	 * @return array
 	 */
 	public function getFeed($limit = null);

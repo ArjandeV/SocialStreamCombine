@@ -1,6 +1,6 @@
 <?php
 
-namespace SocYolo\Cache;
+namespace SocialStreamCombine\Cache;
 
 class AwsS3 extends AbstractCache
 {

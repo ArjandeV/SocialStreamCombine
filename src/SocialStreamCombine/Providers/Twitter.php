@@ -1,7 +1,7 @@
 <?php
-namespace SocYolo\Providers;
+namespace SocialStreamCombine\Providers;
 
-use SocYolo\AbstractProvider as AbstractProvider;
+use SocialStreamCombine\AbstractProvider as AbstractProvider;
 use Guzzle\Plugin\Oauth\OauthPlugin;
 
 class Twitter extends AbstractProvider
