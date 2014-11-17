@@ -1,6 +1,6 @@
 <?php
 
-use SocYolo\Feed;
+use SocialStreamCombine\Feed;
 
 class FeedTests extends \PHPUnit_Framework_TestCase
 {
