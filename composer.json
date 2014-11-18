@@ -1,8 +1,8 @@
 {
-    "name": "adevreede/socyolo",
-    "description": "A yolo implementation of social feeds",
+    "name": "adevreede/SocialStreamCombine",
+    "description": "A script that lets you combine different kinds of socialmedia streams in to one stream with just one API.",
     "keywords": ["socialfeeds", "googleplus", "youtube", "twitter", "facebook"],
-    "license": "MIT",
+    "license": "Apache",
     "autoload": {
         "psr-0": {
             "SocialStreamCombine": "src/"
